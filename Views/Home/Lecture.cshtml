@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Lecture";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <a asp-controller="Home" asp-action="LectureId" class="btn btn-primary">LectureId</a>
+<textarea class="form-control" rows="2"></textarea> <br />
+    <a asp-controller="Home" asp-action="LectureName" class="btn btn-secondary">LectureName</a>
+<textarea class="form-control" rows="2"></textarea> <br />
+    <a asp-controller="Home" asp-action="LectureSurname" class="btn btn-secondary">LectureSurname</a>
+<textarea class="form-control" rows="2"></textarea> <br /> <br />
+    <a asp-controller="Home" asp-action="Email" class="btn btn-secondary">Email</a>
+<textarea class="form-control" rows="2"></textarea> <br /><br />
+</div>
+
+<form asp-action="Documents" method="post">
+</form>
+
+<div class="text-center">
+    <a asp-controller="Home" asp-action="Documents" class="btn btn-primary">Submit</a>
+</div>
